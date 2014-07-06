@@ -11,7 +11,7 @@ More information about the HandlerSocket plugin for MySQL can be found at
 
 **New documentation in the process of writing:**
 
-```
+```php
 HandlerSocketi {
     /* Methods */
     public __construct( string $host, string $port [, array $options ] )
@@ -19,13 +19,13 @@ HandlerSocketi {
     public open_index( string $db, string $table, string $fields [, array $options = array()] )
 }
 ```
-```
+```php
 /* Defaults */
 $options['limit'] = HS_DEFAULT_LIMIT = 1
 $options['ofset'] = HS_DEFAULT_OFFSET = 0
 $options['timeout'] = HS_STREAM_DEFAULT_TIMEOUT = 5
 ```
-```
+```php
 HandlerSocketi_index {
     /* Methods */
     public __construct( $hs, $db, $table, $fields [, $options] )
@@ -44,7 +44,7 @@ HandlerSocketi_index {
     public get_operator()
 }
 ```
-```
+```php
 /* $options */
 HandlerSocketi::__construct() -> $options = [ "timeout" => XXX, "persistent" => XXX ]
 HandlerSocketi::open_index() -> $options = [ "id" => XXX, "index" => "PRIMARY", "filter" => XXX ]
